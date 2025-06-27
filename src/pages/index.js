@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import config from "@generated/docusaurus.config";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
@@ -44,5 +45,5 @@ function HomepageHeader() {
 import { Redirect } from "@docusaurus/router";
 
 export default function Home() {
-	return <Redirect to={`/${process.env.DOCUSAURUS_URL ? "" : "docusaurus-docs-test/"}intro`} />;
+	return <Redirect to={`${config.baseUrl}/intro`} />;
 }
