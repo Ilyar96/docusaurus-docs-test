@@ -63,6 +63,11 @@ jobs:
           name: github-pages
           path: ./build
 
+      - name: Extract artifact.tar
+        run: |
+          tar -xf ./build/artifact.tar -C ./build
+          rm ./build/artifact.tar
+
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
