@@ -70,4 +70,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/
-          server-dir: public_html/docusaurus.iljar96.ru/
+          server-dir: /
