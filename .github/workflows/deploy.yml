@@ -47,6 +47,12 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+          path: build
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
