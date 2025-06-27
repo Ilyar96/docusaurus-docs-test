@@ -44,5 +44,5 @@ function HomepageHeader() {
 import { Redirect } from "@docusaurus/router";
 
 export default function Home() {
-	return <Redirect to="/intro" />;
+	return <Redirect to="/docusaurus-docs-test/intro" />;
 }
